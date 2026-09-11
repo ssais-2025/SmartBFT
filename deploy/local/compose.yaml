@@ -1,0 +1,123 @@
+name: mwvn-regional-bft
+
+x-core-environment: &core-environment
+  MWVN_CORE_LISTEN: "0.0.0.0:8080"
+  MWVN_CORE_URLS: "http://regional-core-1:8080,http://regional-core-2:8080,http://regional-core-3:8080,http://regional-core-4:8080"
+  MWVN_ENGINE_URLS: "http://bft-node-1:8200,http://bft-node-2:8200,http://bft-node-3:8200,http://bft-node-4:8200"
+  MWVN_DATA_DIR: "/data"
+
+x-core-service: &core-service
+  image: mwvn-regional-core:local
+  restart: "no"
+  networks: [mwvn]
+  healthcheck:
+    test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health', timeout=2)"]
+    interval: 2s
+    timeout: 2s
+    retries: 20
+
+x-bft-service: &bft-service
+  image: mwvn-smartbft-engine:local
+  restart: "no"
+  networks: [mwvn]
+  healthcheck:
+    test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8200/v1/health"]
+    interval: 2s
+    timeout: 2s
+    retries: 30
+
+services:
+  regional-core-1:
+    <<: *core-service
+    environment:
+      <<: *core-environment
+      MWVN_NODE_ID: "1"
+      MWVN_BFT_URL: "http://bft-node-1:8200"
+    volumes: [core-1-data:/data]
+    ports:
+      - "127.0.0.1:8090:8080"
+      - "127.0.0.1:8101:8080"
+
+  regional-core-2:
+    <<: *core-service
+    environment:
+      <<: *core-environment
+      MWVN_NODE_ID: "2"
+      MWVN_BFT_URL: "http://bft-node-2:8200"
+    volumes: [core-2-data:/data]
+    ports: ["127.0.0.1:8102:8080"]
+
+  regional-core-3:
+    <<: *core-service
+    environment:
+      <<: *core-environment
+      MWVN_NODE_ID: "3"
+      MWVN_BFT_URL: "http://bft-node-3:8200"
+    volumes: [core-3-data:/data]
+    ports: ["127.0.0.1:8103:8080"]
+
+  regional-core-4:
+    <<: *core-service
+    environment:
+      <<: *core-environment
+      MWVN_NODE_ID: "4"
+      MWVN_BFT_URL: "http://bft-node-4:8200"
+    volumes: [core-4-data:/data]
+    ports: ["127.0.0.1:8104:8080"]
+
+  bft-node-1:
+    <<: *bft-service
+    command: ["-id", "1", "-listen", ":8200", "-membership", "/config/membership.json", "-private-key", "/run/secrets/node.seed", "-core-url", "http://regional-core-1:8080", "-data-dir", "/data", "-prepare-timeout", "5m"]
+    depends_on:
+      regional-core-1: {condition: service_healthy}
+    volumes:
+      - bft-1-data:/data
+      - ./membership.json:/config/membership.json:ro
+      - ./dev-keys/node-1.seed:/run/secrets/node.seed:ro
+    ports: ["127.0.0.1:8201:8200"]
+
+  bft-node-2:
+    <<: *bft-service
+    command: ["-id", "2", "-listen", ":8200", "-membership", "/config/membership.json", "-private-key", "/run/secrets/node.seed", "-core-url", "http://regional-core-2:8080", "-data-dir", "/data", "-prepare-timeout", "5m"]
+    depends_on:
+      regional-core-2: {condition: service_healthy}
+    volumes:
+      - bft-2-data:/data
+      - ./membership.json:/config/membership.json:ro
+      - ./dev-keys/node-2.seed:/run/secrets/node.seed:ro
+    ports: ["127.0.0.1:8202:8200"]
+
+  bft-node-3:
+    <<: *bft-service
+    command: ["-id", "3", "-listen", ":8200", "-membership", "/config/membership.json", "-private-key", "/run/secrets/node.seed", "-core-url", "http://regional-core-3:8080", "-data-dir", "/data", "-prepare-timeout", "5m"]
+    depends_on:
+      regional-core-3: {condition: service_healthy}
+    volumes:
+      - bft-3-data:/data
+      - ./membership.json:/config/membership.json:ro
+      - ./dev-keys/node-3.seed:/run/secrets/node.seed:ro
+    ports: ["127.0.0.1:8203:8200"]
+
+  bft-node-4:
+    <<: *bft-service
+    command: ["-id", "4", "-listen", ":8200", "-membership", "/config/membership.json", "-private-key", "/run/secrets/node.seed", "-core-url", "http://regional-core-4:8080", "-data-dir", "/data", "-prepare-timeout", "5m"]
+    depends_on:
+      regional-core-4: {condition: service_healthy}
+    volumes:
+      - bft-4-data:/data
+      - ./membership.json:/config/membership.json:ro
+      - ./dev-keys/node-4.seed:/run/secrets/node.seed:ro
+    ports: ["127.0.0.1:8204:8200"]
+
+networks:
+  mwvn: {}
+
+volumes:
+  core-1-data: {}
+  core-2-data: {}
+  core-3-data: {}
+  core-4-data: {}
+  bft-1-data: {}
+  bft-2-data: {}
+  bft-3-data: {}
+  bft-4-data: {}

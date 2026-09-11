@@ -70,6 +70,11 @@ type CheckpointRetriever func() (*protos.Proposal, []*protos.Signature)
 type View struct {
 	// Configuration
 	DecisionsPerLeader uint64
+	// PrepareVoteCollectionTimeout is a deadline, not a mandatory delay. The view advances as soon as a quorum is
+	// available. A zero value is accepted only for directly constructed internal test views; Consensus configuration
+	// validation requires a positive value.
+	PrepareVoteCollectionTimeout time.Duration
+
 	RetrieveCheckpoint CheckpointRetriever
 	SelfID             uint64
 	N                  uint64
@@ -443,10 +448,30 @@ func (v *View) processPrepares() Phase {
 	proposal := v.inFlightProposal
 	expectedDigest := proposal.Digest()
 
+	var timeout <-chan time.Time
+	var timer *time.Timer
+	if v.PrepareVoteCollectionTimeout > 0 {
+		timer = time.NewTimer(v.PrepareVoteCollectionTimeout)
+		timeout = timer.C
+		defer func() {
+			if !timer.Stop() {
+				select {
+				case <-timer.C:
+				default:
+				}
+			}
+		}()
+	}
+
 	var voterIDs []uint64
+	v.Logger.Infof("%d collecting %d remote prepares for proposal with seq %d; timeout %s", v.SelfID, v.Quorum-1, v.ProposalSequence, v.PrepareVoteCollectionTimeout)
 	for len(voterIDs) < v.Quorum-1 {
 		select {
 		case <-v.abortChan:
+			return ABORT
+		case <-timeout:
+			v.Logger.Warnf("%d prepare vote collection timeout after %s for view %d and seq %d; collected %d of %d remote prepares", v.SelfID, v.PrepareVoteCollectionTimeout, v.Number, v.ProposalSequence, len(voterIDs), v.Quorum-1)
+			v.FailureDetector.Complain(v.Number, true)
 			return ABORT
 		case msg := <-v.incMsgs:
 			v.processMsg(msg.sender, msg.Message)

@@ -15,6 +15,7 @@ import (
 	"strconv"
 	"sync"
 	"sync/atomic"
+	"time"
 
 	"github.com/hyperledger-labs/SmartBFT/pkg/api"
 	"github.com/hyperledger-labs/SmartBFT/pkg/types"
@@ -248,7 +249,9 @@ func (ifp *InFlightData) clear() {
 
 // ProposalMaker implements ProposerBuilder
 type ProposalMaker struct {
-	DecisionsPerLeader uint64
+	DecisionsPerLeader           uint64
+	PrepareVoteCollectionTimeout time.Duration
+
 	N                  uint64
 	NodesList          []uint64
 	SelfID             uint64
@@ -272,8 +275,10 @@ type ProposalMaker struct {
 // NewProposer returns a new view
 func (pm *ProposalMaker) NewProposer(leader, proposalSequence, viewNum, decisionsInView uint64, quorumSize int) (proposer Proposer, phase Phase) {
 	view := &View{
-		RetrieveCheckpoint: pm.Checkpoint.Get,
-		DecisionsPerLeader: pm.DecisionsPerLeader,
+		RetrieveCheckpoint:           pm.Checkpoint.Get,
+		DecisionsPerLeader:           pm.DecisionsPerLeader,
+		PrepareVoteCollectionTimeout: pm.PrepareVoteCollectionTimeout,
+
 		N:                  pm.N,
 		NodesList:          pm.NodesList,
 		LeaderID:           leader,

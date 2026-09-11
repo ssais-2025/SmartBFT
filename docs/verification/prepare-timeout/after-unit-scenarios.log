@@ -1,0 +1,14 @@
+=== RUN   TestDefaultPrepareVoteCollectionTimeout
+--- PASS: TestDefaultPrepareVoteCollectionTimeout (0.00s)
+=== RUN   TestPrepareVoteCollectionTimeoutValidation
+--- PASS: TestPrepareVoteCollectionTimeoutValidation (0.00s)
+PASS
+ok  	github.com/hyperledger-labs/SmartBFT/pkg/types	0.421s
+=== RUN   TestPrepareQuorumContinuesWithoutWaitingForTimeout
+--- PASS: TestPrepareQuorumContinuesWithoutWaitingForTimeout (0.00s)
+=== RUN   TestPrepareVoteCollectionTimeoutComplainsAndAborts
+--- PASS: TestPrepareVoteCollectionTimeoutComplainsAndAborts (0.03s)
+=== RUN   TestPrepareVoteCollectionStopsWhenViewIsAborted
+--- PASS: TestPrepareVoteCollectionStopsWhenViewIsAborted (0.00s)
+PASS
+ok  	github.com/hyperledger-labs/SmartBFT/internal/bft	0.759s

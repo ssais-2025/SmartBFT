@@ -315,7 +315,9 @@ func (c *Consensus) SubmitRequest(req []byte) error {
 
 func (c *Consensus) proposalMaker() *algorithm.ProposalMaker {
 	return &algorithm.ProposalMaker{
-		DecisionsPerLeader: c.Config.DecisionsPerLeader,
+		DecisionsPerLeader:           c.Config.DecisionsPerLeader,
+		PrepareVoteCollectionTimeout: c.Config.PrepareVoteCollectionTimeout,
+
 		Checkpoint:         c.checkpoint,
 		State:              c.state,
 		Comm:               c.controller,

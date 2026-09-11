@@ -1,0 +1,11 @@
+ok  	github.com/hyperledger-labs/SmartBFT/examples/naive_chain	13.944s
+ok  	github.com/hyperledger-labs/SmartBFT/internal/bft	6.476s
+?   	github.com/hyperledger-labs/SmartBFT/internal/bft/mocks	[no test files]
+ok  	github.com/hyperledger-labs/SmartBFT/pkg/api	2.352s
+?   	github.com/hyperledger-labs/SmartBFT/pkg/consensus	[no test files]
+?   	github.com/hyperledger-labs/SmartBFT/pkg/metrics	[no test files]
+?   	github.com/hyperledger-labs/SmartBFT/pkg/metrics/disabled	[no test files]
+ok  	github.com/hyperledger-labs/SmartBFT/pkg/types	1.737s
+ok  	github.com/hyperledger-labs/SmartBFT/pkg/wal	9.694s
+?   	github.com/hyperledger-labs/SmartBFT/smartbftprotos	[no test files]
+ok  	github.com/hyperledger-labs/SmartBFT/test	80.336s

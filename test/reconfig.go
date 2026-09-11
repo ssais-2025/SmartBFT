@@ -11,6 +11,7 @@ type Configuration struct {
 	RequestBatchMaxCount          int64
 	RequestBatchMaxBytes          int64
 	RequestBatchMaxInterval       time.Duration
+	PrepareVoteCollectionTimeout  time.Duration
 	IncomingMessageBufferSize     int64
 	RequestPoolSize               int64
 	RequestForwardTimeout         time.Duration
@@ -45,6 +46,7 @@ func (r Reconfig) recconfigToUint(id uint64) types.Reconfig {
 			RequestBatchMaxCount:          uint64(r.CurrentConfig.RequestBatchMaxCount),
 			RequestBatchMaxBytes:          uint64(r.CurrentConfig.RequestBatchMaxBytes),
 			RequestBatchMaxInterval:       r.CurrentConfig.RequestBatchMaxInterval,
+			PrepareVoteCollectionTimeout:  r.CurrentConfig.PrepareVoteCollectionTimeout,
 			IncomingMessageBufferSize:     uint64(r.CurrentConfig.IncomingMessageBufferSize),
 			RequestPoolSize:               uint64(r.CurrentConfig.RequestPoolSize),
 			RequestForwardTimeout:         r.CurrentConfig.RequestForwardTimeout,
@@ -74,6 +76,7 @@ func recconfigToInt(reconfig types.Reconfig) Reconfig {
 			RequestBatchMaxCount:          int64(reconfig.CurrentConfig.RequestBatchMaxCount),
 			RequestBatchMaxBytes:          int64(reconfig.CurrentConfig.RequestBatchMaxBytes),
 			RequestBatchMaxInterval:       reconfig.CurrentConfig.RequestBatchMaxInterval,
+			PrepareVoteCollectionTimeout:  reconfig.CurrentConfig.PrepareVoteCollectionTimeout,
 			IncomingMessageBufferSize:     int64(reconfig.CurrentConfig.IncomingMessageBufferSize),
 			RequestPoolSize:               int64(reconfig.CurrentConfig.RequestPoolSize),
 			RequestForwardTimeout:         reconfig.CurrentConfig.RequestForwardTimeout,

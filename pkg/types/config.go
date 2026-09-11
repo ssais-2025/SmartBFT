@@ -26,6 +26,10 @@ type Configuration struct {
 	// first created (i.e. the time the first request was added to it), or until it is of count RequestBatchMaxCount,
 	// or total size RequestBatchMaxBytes, which ever happens first.
 	RequestBatchMaxInterval time.Duration
+	// PrepareVoteCollectionTimeout is the maximum time a replica waits for a prepare quorum after accepting a
+	// proposal. A replica proceeds immediately when the quorum is reached. If the timeout expires first, the replica
+	// complains about the current view and stops participating in it.
+	PrepareVoteCollectionTimeout time.Duration
 
 	// IncomingMessageBufferSize is the size of the buffer holding incoming messages before they are processed.
 	IncomingMessageBufferSize uint64
@@ -93,6 +97,7 @@ var DefaultConfig = Configuration{
 	RequestBatchMaxCount:          100,
 	RequestBatchMaxBytes:          10 * 1024 * 1024,
 	RequestBatchMaxInterval:       50 * time.Millisecond,
+	PrepareVoteCollectionTimeout:  5 * time.Minute,
 	IncomingMessageBufferSize:     200,
 	RequestPoolSize:               400,
 	RequestForwardTimeout:         2 * time.Second,
@@ -124,6 +129,9 @@ func (c Configuration) Validate() error {
 	}
 	if c.RequestBatchMaxInterval <= 0 {
 		return errors.New("RequestBatchMaxInterval should be greater than zero")
+	}
+	if c.PrepareVoteCollectionTimeout <= 0 {
+		return errors.New("PrepareVoteCollectionTimeout should be greater than zero")
 	}
 	if c.IncomingMessageBufferSize == 0 {
 		return errors.New("IncomingMessageBufferSize should be greater than zero")

@@ -1,0 +1,27 @@
+{
+  "schema_version": "mwvn-smartbft-membership/v1",
+  "network_id": "mwvn-local-four-node-v1",
+  "version": 1,
+  "nodes": [
+    {
+      "id": 1,
+      "peer_url": "http://bft-node-1:8200",
+      "public_key": "cdTmDIYxqdvOQC9HARehDqbVHD1AtgHG/MWwSQ10ETQ="
+    },
+    {
+      "id": 2,
+      "peer_url": "http://bft-node-2:8200",
+      "public_key": "1m/VHETwWoAVNvkAsplxKa2cvx6AN98ImSwEE4eu8B4="
+    },
+    {
+      "id": 3,
+      "peer_url": "http://bft-node-3:8200",
+      "public_key": "faEDCkEytNzg5OVL2UM/zz5ECD2FZIyTP5r2387kwvI="
+    },
+    {
+      "id": 4,
+      "peer_url": "http://bft-node-4:8200",
+      "public_key": "PRO7M4CrREhvY1+LBSeIW+wXN6G/msjwrakmjj3GwKo="
+    }
+  ]
+}

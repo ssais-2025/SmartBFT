@@ -1,0 +1,501 @@
+=== RUN   TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery
+2026-09-10T07:27:21.767+0300	INFO	wal/writeaheadlog.go:765	Trying to creating a Write-Ahead-Log at dir: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.768+0300	DEBUG	wal/writeaheadlog.go:766	Write-Ahead-Log options: {FileSizeBytes: 0, BufferSizeBytes: 0}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.775+0300	DEBUG	wal/writeaheadlog.go:755	CRC-Anchor DEED0001 written to file: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node1/0000000000000001.wal, at offset 0, size=16	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.775+0300	INFO	wal/writeaheadlog.go:192	Write-Ahead-Log created successfully, mode: WRITE, dir: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.775+0300	INFO	wal/writeaheadlog.go:803	Write-Ahead-Log initialized successfully, initial state contains 0 entries	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.775+0300	INFO	wal/writeaheadlog.go:765	Trying to creating a Write-Ahead-Log at dir: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.775+0300	DEBUG	wal/writeaheadlog.go:766	Write-Ahead-Log options: {FileSizeBytes: 0, BufferSizeBytes: 0}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.780+0300	DEBUG	wal/writeaheadlog.go:755	CRC-Anchor DEED0001 written to file: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node2/0000000000000001.wal, at offset 0, size=16	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.780+0300	INFO	wal/writeaheadlog.go:192	Write-Ahead-Log created successfully, mode: WRITE, dir: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.780+0300	INFO	wal/writeaheadlog.go:803	Write-Ahead-Log initialized successfully, initial state contains 0 entries	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.780+0300	INFO	wal/writeaheadlog.go:765	Trying to creating a Write-Ahead-Log at dir: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node3	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:21.780+0300	DEBUG	wal/writeaheadlog.go:766	Write-Ahead-Log options: {FileSizeBytes: 0, BufferSizeBytes: 0}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:21.785+0300	DEBUG	wal/writeaheadlog.go:755	CRC-Anchor DEED0001 written to file: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node3/0000000000000001.wal, at offset 0, size=16	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:21.785+0300	INFO	wal/writeaheadlog.go:192	Write-Ahead-Log created successfully, mode: WRITE, dir: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node3	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:21.785+0300	INFO	wal/writeaheadlog.go:803	Write-Ahead-Log initialized successfully, initial state contains 0 entries	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:21.785+0300	INFO	wal/writeaheadlog.go:765	Trying to creating a Write-Ahead-Log at dir: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node4	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:21.785+0300	DEBUG	wal/writeaheadlog.go:766	Write-Ahead-Log options: {FileSizeBytes: 0, BufferSizeBytes: 0}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:21.790+0300	DEBUG	wal/writeaheadlog.go:755	CRC-Anchor DEED0001 written to file: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node4/0000000000000001.wal, at offset 0, size=16	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:21.790+0300	INFO	wal/writeaheadlog.go:192	Write-Ahead-Log created successfully, mode: WRITE, dir: /var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node4	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:21.790+0300	INFO	wal/writeaheadlog.go:803	Write-Ahead-Log initialized successfully, initial state contains 0 entries	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:21.791+0300	DEBUG	consensus/consensus.go:153	Application started with view 0, seq 0, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.791+0300	INFO	bft/state.go:99	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.791+0300	DEBUG	consensus/consensus.go:478	No view change to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.791+0300	INFO	bft/state.go:80	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.791+0300	DEBUG	consensus/consensus.go:493	No new view to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.791+0300	DEBUG	bft/controller.go:793	Starting controller with view 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.791+0300	DEBUG	bft/controller.go:805	The number of nodes (N) is 4, F is 1, and the quorum size is 3	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.791+0300	INFO	bft/controller.go:616	Synchronizer returned with an empty proposal metadata	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.791+0300	DEBUG	bft/statecollector.go:83	Node 1 started collecting state responses	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.993+0300	INFO	bft/statecollector.go:90	Node 1 reached the state collector timeout	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.993+0300	INFO	bft/controller.go:653	Fetching state failed	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.993+0300	DEBUG	bft/controller.go:812	After sync starting controller with view 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.993+0300	INFO	bft/state.go:121	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.993+0300	DEBUG	bft/controller.go:396	Acquiring leader token when starting view with phase COMMITTED	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.993+0300	INFO	bft/heartbeatmonitor.go:185	Changing to leader role, current view: 0, current leader: 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.993+0300	INFO	bft/controller.go:404	Starting view with number 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:21.993+0300	DEBUG	consensus/consensus.go:153	Application started with view 0, seq 0, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.993+0300	INFO	bft/state.go:99	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.993+0300	DEBUG	consensus/consensus.go:478	No view change to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.993+0300	INFO	bft/state.go:80	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.993+0300	DEBUG	consensus/consensus.go:493	No new view to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.993+0300	DEBUG	bft/controller.go:793	Starting controller with view 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.994+0300	DEBUG	bft/controller.go:805	The number of nodes (N) is 4, F is 1, and the quorum size is 3	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.994+0300	INFO	bft/controller.go:616	Synchronizer returned with an empty proposal metadata	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:21.994+0300	DEBUG	bft/statecollector.go:83	Node 2 started collecting state responses	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.195+0300	INFO	bft/statecollector.go:90	Node 2 reached the state collector timeout	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.195+0300	INFO	bft/controller.go:653	Fetching state failed	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.195+0300	DEBUG	bft/controller.go:812	After sync starting controller with view 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.195+0300	INFO	bft/state.go:121	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.195+0300	INFO	bft/heartbeatmonitor.go:185	Changing to follower role, current view: 0, current leader: 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.196+0300	INFO	bft/controller.go:404	Starting view with number 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.196+0300	DEBUG	consensus/consensus.go:153	Application started with view 0, seq 0, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.196+0300	INFO	bft/state.go:99	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.196+0300	DEBUG	consensus/consensus.go:478	No view change to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.196+0300	INFO	bft/state.go:80	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.196+0300	DEBUG	consensus/consensus.go:493	No new view to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.196+0300	DEBUG	bft/controller.go:793	Starting controller with view 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.196+0300	DEBUG	bft/controller.go:805	The number of nodes (N) is 4, F is 1, and the quorum size is 3	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.196+0300	INFO	bft/controller.go:616	Synchronizer returned with an empty proposal metadata	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.196+0300	DEBUG	bft/statecollector.go:83	Node 3 started collecting state responses	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.397+0300	INFO	bft/statecollector.go:90	Node 3 reached the state collector timeout	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.397+0300	INFO	bft/controller.go:653	Fetching state failed	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.397+0300	DEBUG	bft/controller.go:812	After sync starting controller with view 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.397+0300	INFO	bft/state.go:121	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.397+0300	INFO	bft/heartbeatmonitor.go:185	Changing to follower role, current view: 0, current leader: 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.397+0300	INFO	bft/controller.go:404	Starting view with number 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.397+0300	DEBUG	consensus/consensus.go:153	Application started with view 0, seq 0, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.397+0300	INFO	bft/state.go:99	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.397+0300	DEBUG	consensus/consensus.go:478	No view change to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.397+0300	INFO	bft/state.go:80	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.397+0300	DEBUG	consensus/consensus.go:493	No new view to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.397+0300	DEBUG	bft/controller.go:793	Starting controller with view 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.397+0300	DEBUG	bft/controller.go:805	The number of nodes (N) is 4, F is 1, and the quorum size is 3	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.397+0300	INFO	bft/controller.go:616	Synchronizer returned with an empty proposal metadata	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.397+0300	DEBUG	bft/statecollector.go:83	Node 4 started collecting state responses	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.598+0300	INFO	bft/statecollector.go:90	Node 4 reached the state collector timeout	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.598+0300	INFO	bft/controller.go:653	Fetching state failed	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.598+0300	DEBUG	bft/controller.go:812	After sync starting controller with view 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.598+0300	INFO	bft/state.go:121	Nothing to restore	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.598+0300	INFO	bft/heartbeatmonitor.go:185	Changing to follower role, current view: 0, current leader: 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.598+0300	INFO	bft/controller.go:404	Starting view with number 0, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.599+0300	DEBUG	consensus/consensus.go:312	Submit Request: {mwvn-ingress approved-qc-recovery}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.599+0300	DEBUG	bft/requestpool.go:273	Request {mwvn-ingress approved-qc-recovery} submitted; started a timeout: 500ms	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.599+0300	DEBUG	bft/controller.go:270	Request {mwvn-ingress approved-qc-recovery} was submitted	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.600+0300	DEBUG	bft/controller.go:331	2 got message from 1: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.600+0300	DEBUG	bft/controller.go:331	3 got message from 1: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.600+0300	DEBUG	bft/controller.go:331	1 got message from 2: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.600+0300	DEBUG	bft/controller.go:331	2 got message from 3: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.600+0300	DEBUG	bft/controller.go:331	4 got message from 1: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.600+0300	DEBUG	bft/controller.go:331	3 got message from 2: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.600+0300	DEBUG	bft/controller.go:331	1 got message from 3: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.600+0300	DEBUG	bft/controller.go:331	2 got message from 4: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.600+0300	DEBUG	bft/controller.go:331	3 got message from 4: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	1 got message from 4: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.600+0300	DEBUG	bft/controller.go:331	4 got message from 2: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	4 got message from 3: state_transfer_request:{}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	2 got message from 1: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	1 got message from 2: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/statecollector.go:58	Node 1 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/statecollector.go:58	Node 2 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	1 got message from 3: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	4 got message from 2: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	3 got message from 2: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/statecollector.go:58	Node 1 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/statecollector.go:58	Node 4 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	2 got message from 3: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/statecollector.go:58	Node 3 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	1 got message from 4: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	4 got message from 3: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/statecollector.go:58	Node 2 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	3 got message from 1: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/statecollector.go:58	Node 1 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/statecollector.go:58	Node 4 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/statecollector.go:58	Node 3 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	2 got message from 4: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	4 got message from 1: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/statecollector.go:58	Node 2 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/controller.go:331	3 got message from 4: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.601+0300	DEBUG	bft/statecollector.go:58	Node 4 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.602+0300	DEBUG	bft/statecollector.go:58	Node 3 handling state response: state_transfer_response:{sequence:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.604+0300	DEBUG	bft/requestpool.go:328	Returning batch of 1 requests totalling 110B	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.604+0300	DEBUG	bft/view.go:930	GetMetadata with view 0, seq 1, dec 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.604+0300	DEBUG	bft/view.go:960	Proposing proposal 1 with verification sequence of 0 and 0 commit signatures	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.604+0300	DEBUG	bft/view.go:1054	Rotation is disabled, setting blacklist to be empty	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.604+0300	DEBUG	bft/view.go:1007	Leader rotation is disabled, will not bind signatures to proposals	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.604+0300	DEBUG	bft/view.go:1002	Proposing proposal sequence 1 in view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.604+0300	DEBUG	bft/view.go:228	1 got message <PrePrepare with view: 0, seq: 1, payload of 116 bytes, header: > from 1 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.605+0300	DEBUG	bft/view.go:639	Previous proposal verification sequence: 0, current verification sequence: 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.605+0300	DEBUG	bft/view.go:677	DecisionsPerLeader is 0, hence leader rotation is inactive	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.612+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=216, recordLength=206, dataCRC=9DF1CC17; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node1/0000000000000001.wal, new-offset=232	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/controller.go:331	2 got message from 1: <PrePrepare with view: 0, seq: 1, payload of 116 bytes, header: >	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/controller.go:331	4 got message from 1: <PrePrepare with view: 0, seq: 1, payload of 116 bytes, header: >	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/controller.go:331	3 got message from 1: <PrePrepare with view: 0, seq: 1, payload of 116 bytes, header: >	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.612+0300	INFO	bft/view.go:431	Processed proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/view.go:228	2 got message <PrePrepare with view: 0, seq: 1, payload of 116 bytes, header: > from 1 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 1, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/view.go:228	4 got message <PrePrepare with view: 0, seq: 1, payload of 116 bytes, header: > from 1 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 1, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/view.go:228	3 got message <PrePrepare with view: 0, seq: 1, payload of 116 bytes, header: > from 1 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.612+0300	INFO	bft/view.go:467	1 collecting 2 remote prepares for proposal with seq 1; timeout 250ms	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/view.go:639	Previous proposal verification sequence: 0, current verification sequence: 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 1, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/view.go:677	DecisionsPerLeader is 0, hence leader rotation is inactive	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/view.go:639	Previous proposal verification sequence: 0, current verification sequence: 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/view.go:639	Previous proposal verification sequence: 0, current verification sequence: 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/view.go:677	DecisionsPerLeader is 0, hence leader rotation is inactive	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.612+0300	DEBUG	bft/view.go:677	DecisionsPerLeader is 0, hence leader rotation is inactive	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.617+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=216, recordLength=206, dataCRC=9DF1CC17; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node2/0000000000000001.wal, new-offset=232	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.617+0300	INFO	bft/view.go:431	Processed proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.618+0300	INFO	bft/view.go:467	2 collecting 2 remote prepares for proposal with seq 1; timeout 250ms	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.623+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=216, recordLength=206, dataCRC=9DF1CC17; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node4/0000000000000001.wal, new-offset=232	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.623+0300	INFO	bft/view.go:431	Processed proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.623+0300	INFO	bft/view.go:467	4 collecting 2 remote prepares for proposal with seq 1; timeout 250ms	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.627+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=216, recordLength=206, dataCRC=9DF1CC17; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node3/0000000000000001.wal, new-offset=232	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.627+0300	INFO	bft/view.go:431	Processed proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.627+0300	INFO	bft/view.go:467	3 collecting 2 remote prepares for proposal with seq 1; timeout 250ms	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.777+0300	DEBUG	bft/heartbeatmonitor.go:393	Last heartbeat from 1 was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.781+0300	DEBUG	bft/heartbeatmonitor.go:393	Last heartbeat from 1 was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.786+0300	DEBUG	bft/heartbeatmonitor.go:393	Last heartbeat from 1 was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.863+0300	WARN	bft/view.go:473	1 prepare vote collection timeout after 250ms for view 0 and seq 1; collected 0 of 2 remote prepares	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*View).processPrepares
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/view.go:473
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*View).doPhase
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/view.go:292
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*View).run
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/view.go:283
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*View).Start.func1
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/view.go:146
+2026-09-10T07:27:22.864+0300	DEBUG	bft/requestpool.go:467	Stopped all timers: size=1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.864+0300	DEBUG	bft/viewchanger.go:385	Node 1 started view change, last view is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.864+0300	DEBUG	bft/controller.go:467	AbortView, the current view num is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.864+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.864+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.864+0300	DEBUG	bft/controller.go:331	2 got message from 1: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.864+0300	DEBUG	bft/controller.go:331	3 got message from 1: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.864+0300	DEBUG	bft/controller.go:331	4 got message from 1: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.864+0300	DEBUG	bft/viewchanger.go:275	Node 2 is processing a view change message view_change:{next_view:1} from 1 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.864+0300	DEBUG	bft/viewchanger.go:275	Node 4 is processing a view change message view_change:{next_view:1} from 1 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.864+0300	DEBUG	bft/viewchanger.go:275	Node 3 is processing a view change message view_change:{next_view:1} from 1 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.869+0300	WARN	bft/view.go:473	2 prepare vote collection timeout after 250ms for view 0 and seq 1; collected 0 of 2 remote prepares	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*View).processPrepares
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/view.go:473
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*View).doPhase
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/view.go:292
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*View).run
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/view.go:283
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*View).Start.func1
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/view.go:146
+2026-09-10T07:27:22.870+0300	DEBUG	bft/requestpool.go:467	Stopped all timers: size=0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/viewchanger.go:385	Node 2 started view change, last view is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:331	1 got message from 2: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:467	AbortView, the current view num is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:331	3 got message from 2: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:331	4 got message from 2: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/viewchanger.go:275	Node 1 is processing a view change message view_change:{next_view:1} from 2 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/viewchanger.go:275	Node 3 is processing a view change message view_change:{next_view:1} from 2 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/viewchanger.go:275	Node 4 is processing a view change message view_change:{next_view:1} from 2 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/viewchanger.go:403	Node 3 is joining view change, last view is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/viewchanger.go:403	Node 4 is joining view change, last view is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/requestpool.go:467	Stopped all timers: size=0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/requestpool.go:467	Stopped all timers: size=0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/viewchanger.go:385	Node 3 started view change, last view is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/viewchanger.go:385	Node 4 started view change, last view is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:331	1 got message from 3: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:331	2 got message from 3: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:467	AbortView, the current view num is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:331	4 got message from 3: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:467	AbortView, the current view num is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:331	1 got message from 4: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/viewchanger.go:275	Node 1 is processing a view change message view_change:{next_view:1} from 3 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.871+0300	DEBUG	bft/viewchanger.go:403	Node 1 is joining view change, last view is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.870+0300	DEBUG	bft/controller.go:331	2 got message from 4: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.871+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.871+0300	DEBUG	bft/viewchanger.go:370	Node 1 has already started view change with last view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.871+0300	DEBUG	bft/viewchanger.go:275	Node 2 is processing a view change message view_change:{next_view:1} from 3 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.871+0300	DEBUG	bft/controller.go:331	3 got message from 4: view_change:{next_view:1}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.871+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.871+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.871+0300	DEBUG	bft/viewchanger.go:403	Node 2 is joining view change, last view is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.871+0300	DEBUG	bft/viewchanger.go:370	Node 2 has already started view change with last view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.871+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.881+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=4, dataCRC=082F585D; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node4/0000000000000001.wal, new-offset=248	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.881+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=4, dataCRC=082F585D; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node3/0000000000000001.wal, new-offset=248	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.881+0300	DEBUG	bft/controller.go:467	AbortView, the current view num is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.881+0300	DEBUG	bft/controller.go:467	AbortView, the current view num is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.881+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.881+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.882+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.882+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.882+0300	DEBUG	bft/viewchanger.go:430	Node 4 sent view data msg, with next view 1, to the new leader 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.882+0300	DEBUG	bft/viewchanger.go:430	Node 3 sent view data msg, with next view 1, to the new leader 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.882+0300	DEBUG	bft/viewchanger.go:275	Node 4 is processing a view change message view_change:{next_view:1} from 3 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.882+0300	DEBUG	bft/controller.go:331	2 got message from 4: <ViewData signed by 4 with NextView: 1>	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.882+0300	DEBUG	bft/viewchanger.go:275	Node 3 is processing a view change message view_change:{next_view:1} from 4 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.882+0300	DEBUG	bft/controller.go:331	2 got message from 3: <ViewData signed by 3 with NextView: 1>	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.882+0300	WARN	bft/viewchanger.go:299	Node 4 got viewChange message view_change:{next_view:1} from 3 with view 1, expected view 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).processMsg
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:299
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).run
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:218
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).Start.func1
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:157
+2026-09-10T07:27:22.882+0300	WARN	bft/viewchanger.go:299	Node 3 got viewChange message view_change:{next_view:1} from 4 with view 1, expected view 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).processMsg
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:299
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).run
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:218
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).Start.func1
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:157
+2026-09-10T07:27:22.887+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=4, dataCRC=082F585D; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node1/0000000000000001.wal, new-offset=248	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.887+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=4, dataCRC=082F585D; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node2/0000000000000001.wal, new-offset=248	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.887+0300	DEBUG	bft/controller.go:467	AbortView, the current view num is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.887+0300	DEBUG	bft/controller.go:467	AbortView, the current view num is 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.887+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.887+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.887+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/viewchanger.go:430	Node 2 sent view data msg, with next view 1, to the new leader 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/viewchanger.go:430	Node 1 sent view data msg, with next view 1, to the new leader 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/controller.go:331	2 got message from 1: <ViewData signed by 1 with NextView: 1>	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/viewchanger.go:275	Node 2 is processing a view change message view_change:{next_view:1} from 4 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/viewchanger.go:275	Node 1 is processing a view change message view_change:{next_view:1} from 4 with next view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.888+0300	WARN	bft/viewchanger.go:299	Node 2 got viewChange message view_change:{next_view:1} from 4 with view 1, expected view 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).processMsg
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:299
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).run
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:218
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).Start.func1
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:157
+2026-09-10T07:27:22.888+0300	WARN	bft/viewchanger.go:299	Node 1 got viewChange message view_change:{next_view:1} from 4 with view 1, expected view 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).processMsg
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:299
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).run
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:218
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).Start.func1
+	/Users/shlomy/projects/SmartBFT-v1.0.1/internal/bft/viewchanger.go:157
+2026-09-10T07:27:22.888+0300	DEBUG	bft/viewchanger.go:305	Node 2 is processing a view data message <ViewData signed by 4 with NextView: 1> from 4	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/viewchanger.go:523	Node 2 got <ViewData signed by 4 with NextView: 1> from 4, and it passed the last decision check	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/viewchanger.go:530	Node 2 got <ViewData signed by 4 with NextView: 1> from 4, and the in flight proposal is valid	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/viewchanger.go:305	Node 2 is processing a view data message <ViewData signed by 3 with NextView: 1> from 3	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/viewchanger.go:523	Node 2 got <ViewData signed by 3 with NextView: 1> from 3, and it passed the last decision check	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/viewchanger.go:530	Node 2 got <ViewData signed by 3 with NextView: 1> from 3, and the in flight proposal is valid	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.888+0300	DEBUG	bft/viewchanger.go:751	Node 2 got a quorum of viewData messages	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/viewchanger.go:760	Node 2 checked the in flight and it was valid	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/viewchanger.go:779	Node 2 is broadcasting a new view msg	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/viewchanger.go:781	Node 2 sent a new view msg to self	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/controller.go:331	1 got message from 2: < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>>	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/viewchanger.go:316	Node 2 is processing a new view message < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>> from 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/controller.go:331	3 got message from 2: < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>>	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/controller.go:331	4 got message from 2: < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>>	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/viewchanger.go:316	Node 1 is processing a new view message < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>> from 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/viewchanger.go:1093	Node 2 found a quorum of valid view data messages within the new view message	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/viewchanger.go:316	Node 4 is processing a new view message < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>> from 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/viewchanger.go:316	Node 3 is processing a new view message < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>> from 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/viewchanger.go:1093	Node 1 found a quorum of valid view data messages within the new view message	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/viewchanger.go:1093	Node 4 found a quorum of valid view data messages within the new view message	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.889+0300	DEBUG	bft/viewchanger.go:1093	Node 3 found a quorum of valid view data messages within the new view message	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.894+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=6, dataCRC=9F2DE66E; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node2/0000000000000001.wal, new-offset=264	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.894+0300	DEBUG	bft/controller.go:476	ViewChanged, the new view is 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.894+0300	DEBUG	bft/requestpool.go:489	Restarted all timers: size=0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.895+0300	DEBUG	bft/viewchanger.go:784	Node 2 sent a new view msg	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.895+0300	DEBUG	bft/viewchanger.go:305	Node 2 is processing a view data message <ViewData signed by 1 with NextView: 1> from 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.895+0300	DEBUG	bft/viewchanger.go:523	Node 2 got <ViewData signed by 1 with NextView: 1> from 1, and it passed the last decision check	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.895+0300	DEBUG	bft/viewchanger.go:530	Node 2 got <ViewData signed by 1 with NextView: 1> from 1, and the in flight proposal is valid	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.904+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=6, dataCRC=9F2DE66E; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node4/0000000000000001.wal, new-offset=264	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.894+0300	DEBUG	bft/controller.go:511	get newView from viewChange	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.904+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=6, dataCRC=9F2DE66E; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node1/0000000000000001.wal, new-offset=264	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:476	ViewChanged, the new view is 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:476	ViewChanged, the new view is 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/requestpool.go:489	Restarted all timers: size=0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/requestpool.go:489	Restarted all timers: size=1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:511	get newView from viewChange	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:511	get newView from viewChange	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:429	Starting view after setting decisions in view to 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:429	Starting view after setting decisions in view to 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:396	Acquiring leader token when starting view with phase COMMITTED	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.904+0300	DEBUG	bft/controller.go:429	Starting view after setting decisions in view to 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.904+0300	INFO	bft/heartbeatmonitor.go:185	Changing to leader role, current view: 1, current leader: 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.904+0300	INFO	bft/heartbeatmonitor.go:185	Changing to follower role, current view: 1, current leader: 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.904+0300	INFO	bft/heartbeatmonitor.go:185	Changing to follower role, current view: 1, current leader: 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.904+0300	INFO	bft/controller.go:404	Starting view with number 1, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:22.904+0300	INFO	bft/controller.go:404	Starting view with number 1, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:22.904+0300	INFO	bft/controller.go:404	Starting view with number 1, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:22.908+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=6, dataCRC=9F2DE66E; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node3/0000000000000001.wal, new-offset=264	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.908+0300	DEBUG	bft/controller.go:476	ViewChanged, the new view is 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.908+0300	DEBUG	bft/requestpool.go:489	Restarted all timers: size=0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.908+0300	DEBUG	bft/controller.go:511	get newView from viewChange	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.908+0300	DEBUG	bft/controller.go:439	view for abort 0, current view 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.908+0300	DEBUG	bft/controller.go:451	Aborting current view with number 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.908+0300	DEBUG	bft/controller.go:429	Starting view after setting decisions in view to 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.908+0300	INFO	bft/heartbeatmonitor.go:185	Changing to follower role, current view: 1, current leader: 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:22.908+0300	INFO	bft/controller.go:404	Starting view with number 1, sequence 1, and decisions 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.405+0300	DEBUG	bft/requestpool.go:515	Request {mwvn-ingress approved-qc-recovery}; started a leader-forwarding timeout: 2s	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.406+0300	DEBUG	bft/requestpool.go:520	Request {mwvn-ingress approved-qc-recovery} timeout expired, going to send to leader	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.406+0300	INFO	bft/controller.go:284	Request {mwvn-ingress approved-qc-recovery} timeout expired, forwarding request to leader: 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.407+0300	DEBUG	bft/controller.go:253	Got request from 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.407+0300	DEBUG	bft/requestpool.go:273	Request {mwvn-ingress approved-qc-recovery} submitted; started a timeout: 500ms	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.407+0300	DEBUG	bft/controller.go:270	Request {mwvn-ingress approved-qc-recovery} was submitted	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.417+0300	DEBUG	bft/requestpool.go:328	Returning batch of 1 requests totalling 110B	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.417+0300	DEBUG	bft/view.go:930	GetMetadata with view 1, seq 1, dec 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.418+0300	DEBUG	bft/view.go:960	Proposing proposal 1 with verification sequence of 0 and 0 commit signatures	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.418+0300	DEBUG	bft/view.go:1054	Rotation is disabled, setting blacklist to be empty	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.418+0300	DEBUG	bft/view.go:1007	Leader rotation is disabled, will not bind signatures to proposals	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.419+0300	DEBUG	bft/view.go:1002	Proposing proposal sequence 1 in view 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.419+0300	DEBUG	bft/view.go:228	2 got message <PrePrepare with view: 1, seq: 1, payload of 116 bytes, header: > from 2 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.420+0300	DEBUG	bft/view.go:639	Previous proposal verification sequence: 0, current verification sequence: 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.420+0300	DEBUG	bft/view.go:677	DecisionsPerLeader is 0, hence leader rotation is inactive	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.428+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=224, recordLength=213, dataCRC=DB0BC242; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node2/0000000000000001.wal, new-offset=488	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.428+0300	INFO	bft/view.go:431	Processed proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/controller.go:331	1 got message from 2: <PrePrepare with view: 1, seq: 1, payload of 116 bytes, header: >	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/controller.go:331	3 got message from 2: <PrePrepare with view: 1, seq: 1, payload of 116 bytes, header: >	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/controller.go:331	4 got message from 2: <PrePrepare with view: 1, seq: 1, payload of 116 bytes, header: >	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/view.go:228	1 got message <PrePrepare with view: 1, seq: 1, payload of 116 bytes, header: > from 2 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.428+0300	INFO	bft/view.go:467	2 collecting 2 remote prepares for proposal with seq 1; timeout 250ms	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/view.go:228	3 got message <PrePrepare with view: 1, seq: 1, payload of 116 bytes, header: > from 2 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/controller.go:331	3 got message from 2: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/controller.go:331	1 got message from 2: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/view.go:228	4 got message <PrePrepare with view: 1, seq: 1, payload of 116 bytes, header: > from 2 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/controller.go:331	4 got message from 2: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/view.go:639	Previous proposal verification sequence: 0, current verification sequence: 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/view.go:639	Previous proposal verification sequence: 0, current verification sequence: 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/view.go:677	DecisionsPerLeader is 0, hence leader rotation is inactive	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/view.go:639	Previous proposal verification sequence: 0, current verification sequence: 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.428+0300	DEBUG	bft/view.go:677	DecisionsPerLeader is 0, hence leader rotation is inactive	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.429+0300	DEBUG	bft/view.go:677	DecisionsPerLeader is 0, hence leader rotation is inactive	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.434+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=224, recordLength=213, dataCRC=DB0BC242; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node3/0000000000000001.wal, new-offset=488	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.435+0300	INFO	bft/view.go:431	Processed proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.435+0300	DEBUG	bft/view.go:228	3 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 2 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.435+0300	INFO	bft/view.go:467	3 collecting 2 remote prepares for proposal with seq 1; timeout 250ms	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.435+0300	DEBUG	bft/controller.go:331	1 got message from 3: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.435+0300	DEBUG	bft/controller.go:331	2 got message from 3: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.435+0300	DEBUG	bft/controller.go:331	4 got message from 3: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.443+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=224, recordLength=213, dataCRC=DB0BC242; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node4/0000000000000001.wal, new-offset=488	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.443+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=224, recordLength=213, dataCRC=DB0BC242; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node1/0000000000000001.wal, new-offset=488	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/view.go:228	2 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 3 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.443+0300	INFO	bft/view.go:431	Processed proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.443+0300	INFO	bft/view.go:431	Processed proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/view.go:228	4 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 2 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/view.go:228	1 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 2 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/view.go:228	4 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 3 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/view.go:228	1 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 3 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.443+0300	INFO	bft/view.go:467	1 collecting 2 remote prepares for proposal with seq 1; timeout 250ms	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/controller.go:331	1 got message from 4: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/controller.go:331	2 got message from 4: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.443+0300	INFO	bft/view.go:467	4 collecting 2 remote prepares for proposal with seq 1; timeout 250ms	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/controller.go:331	3 got message from 4: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/controller.go:331	4 got message from 1: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.443+0300	INFO	bft/view.go:489	1 collected 2 prepares from [2 3]	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.443+0300	INFO	bft/view.go:489	4 collected 2 prepares from [2 3]	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/controller.go:331	2 got message from 1: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/view.go:228	2 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 4 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/controller.go:331	3 got message from 1: prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.443+0300	DEBUG	bft/view.go:228	3 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 4 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.444+0300	INFO	bft/view.go:489	2 collected 2 prepares from [3 4]	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.444+0300	DEBUG	bft/view.go:228	3 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 1 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.444+0300	INFO	bft/view.go:489	3 collected 2 prepares from [2 4]	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.459+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=96, recordLength=86, dataCRC=B415CA16; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node2/0000000000000001.wal, new-offset=584	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.459+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=96, recordLength=86, dataCRC=2EFE1C95; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node4/0000000000000001.wal, new-offset=584	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.459+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=96, recordLength=86, dataCRC=040F08EE; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node1/0000000000000001.wal, new-offset=584	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.459+0300	INFO	bft/view.go:541	Processed prepares for proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.459+0300	INFO	bft/view.go:541	Processed prepares for proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.459+0300	INFO	bft/view.go:541	Processed prepares for proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.459+0300	DEBUG	bft/view.go:228	2 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 1 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.459+0300	DEBUG	bft/view.go:228	4 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 1 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.459+0300	DEBUG	bft/view.go:228	1 got message prepare:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"} from 4 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.459+0300	DEBUG	bft/controller.go:331	2 got message from 4: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:4  msg:"\n\x02\x02\x03"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.459+0300	DEBUG	bft/controller.go:331	3 got message from 2: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:2  msg:"\n\x02\x03\x04"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.459+0300	DEBUG	bft/controller.go:331	4 got message from 2: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:2  msg:"\n\x02\x03\x04"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.459+0300	DEBUG	bft/controller.go:331	1 got message from 2: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:2  msg:"\n\x02\x03\x04"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.459+0300	DEBUG	bft/controller.go:331	2 got message from 1: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:1  msg:"\n\x02\x02\x03"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.459+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.459+0300	DEBUG	bft/controller.go:331	3 got message from 4: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:4  msg:"\n\x02\x02\x03"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.460+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.460+0300	DEBUG	bft/view.go:228	2 got message commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:4  msg:"\n\x02\x02\x03"}} from 4 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.460+0300	DEBUG	bft/controller.go:331	4 got message from 1: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:1  msg:"\n\x02\x02\x03"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.464+0300	DEBUG	bft/controller.go:331	1 got message from 4: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:4  msg:"\n\x02\x02\x03"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.464+0300	DEBUG	bft/view.go:228	2 got message commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:1  msg:"\n\x02\x02\x03"}} from 1 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.464+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.464+0300	DEBUG	bft/controller.go:331	3 got message from 1: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:1  msg:"\n\x02\x02\x03"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.464+0300	DEBUG	bft/view.go:228	1 got message commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:2  msg:"\n\x02\x03\x04"}} from 2 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.464+0300	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=96, recordLength=86, dataCRC=9D6EB6E6; file=/var/folders/p4/74h8vgj146b3pm64t_tss0rm0000gn/T/TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery4049778255/node3/0000000000000001.wal, new-offset=584	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.464+0300	DEBUG	bft/view.go:228	4 got message commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:2  msg:"\n\x02\x03\x04"}} from 2 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.464+0300	INFO	bft/view.go:541	Processed prepares for proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.464+0300	INFO	bft/view.go:574	2 collected 2 commits from [4 1]	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.464+0300	DEBUG	bft/view.go:228	1 got message commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:4  msg:"\n\x02\x02\x03"}} from 4 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.464+0300	DEBUG	bft/view.go:228	4 got message commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:1  msg:"\n\x02\x02\x03"}} from 1 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:341	2 processed commits for proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/view.go:228	3 got message commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:2  msg:"\n\x02\x03\x04"}} from 2 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:878	Deciding on seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:574	1 collected 2 commits from [4 2]	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:897	Sequence: 1-->2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:574	4 collected 2 commits from [2 1]	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:341	1 processed commits for proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:341	4 processed commits for proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:538	Delivering to app from Controller decide the last decision proposal	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/view.go:228	3 got message commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:4  msg:"\n\x02\x02\x03"}} from 4 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:878	Deciding on seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:878	Deciding on seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:897	Sequence: 1-->2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.465+0300	DEBUG	test/test_app.go:310	Deliver view 1 last seq 1 prevSeq 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:897	Sequence: 1-->2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/view.go:228	3 got message commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:1  msg:"\n\x02\x02\x03"}} from 1 with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:538	Delivering to app from Controller decide the last decision proposal	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:538	Delivering to app from Controller decide the last decision proposal	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:543	Node 2 delivered proposal	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.465+0300	DEBUG	test/test_app.go:310	Deliver view 1 last seq 1 prevSeq 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/requestpool.go:400	Removed request {mwvn-ingress approved-qc-recovery} from request pool	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:331	1 got message from 3: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:3  msg:"\n\x02\x02\x04"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.465+0300	DEBUG	test/test_app.go:310	Deliver view 1 last seq 1 prevSeq 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:331	2 got message from 3: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:3  msg:"\n\x02\x02\x04"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:331	4 got message from 3: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:3  msg:"\n\x02\x02\x04"}}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:572	view(1) + (decisionsInView(1) / decisionsPerLeader(0)), N(4), blacklist([])	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:543	Node 4 delivered proposal	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:543	Node 1 delivered proposal	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/view.go:781	Got commit for previous sequence (1) from 3, sent back previous commit.	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:574	3 collected 2 commits from [4 2]	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/requestpool.go:382	request {mwvn-ingress approved-qc-recovery} is not in the pool at remove time	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:341	3 processed commits for proposal with seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/requestpool.go:400	Removed request {mwvn-ingress approved-qc-recovery} from request pool	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:907	Request {mwvn-ingress approved-qc-recovery} wasn't found in the pool : request {mwvn-ingress approved-qc-recovery} is not in the pool at remove time	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:331	3 got message from 2: commit:{view:1  seq:1  digest:"073dcdf601853eedc616c6b8110029ec47cdf439c989e30a42e9253c66050c8b"  signature:{signer:2  msg:"\n\x02\x03\x04"}  assist:true}	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:878	Deciding on seq 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:572	view(1) + (decisionsInView(1) / decisionsPerLeader(0)), N(4), blacklist([])	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	INFO	bft/view.go:897	Sequence: 1-->2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:572	view(1) + (decisionsInView(1) / decisionsPerLeader(0)), N(4), blacklist([])	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/view.go:781	Got commit for previous sequence (1) from 3, but didn't have a previous commit to send back.	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/heartbeatmonitor.go:255	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/view.go:781	Got commit for previous sequence (1) from 3, but didn't have a previous commit to send back.	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:538	Delivering to app from Controller decide the last decision proposal	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	DEBUG	test/test_app.go:310	Deliver view 1 last seq 1 prevSeq 0	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:543	Node 3 delivered proposal	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/requestpool.go:382	request {mwvn-ingress approved-qc-recovery} is not in the pool at remove time	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:907	Request {mwvn-ingress approved-qc-recovery} wasn't found in the pool : request {mwvn-ingress approved-qc-recovery} is not in the pool at remove time	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+    prepare_timeout_test.go:133: scenario=prepare-loss-and-recovery configured_prepare_timeout=250ms timed_out_nodes=[1 2] result=committed-after-view-change
+2026-09-10T07:27:23.465+0300	DEBUG	bft/controller.go:572	view(1) + (decisionsInView(1) / decisionsPerLeader(0)), N(4), blacklist([])	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.467+0300	INFO	bft/controller.go:502	Exiting controller run; ID: 3	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.467+0300	INFO	consensus/consensus.go:169	Exiting consensus run; ID: 3	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 3}
+2026-09-10T07:27:23.467+0300	INFO	bft/controller.go:502	Exiting controller run; ID: 4	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.467+0300	INFO	consensus/consensus.go:169	Exiting consensus run; ID: 4	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 4}
+2026-09-10T07:27:23.467+0300	INFO	bft/controller.go:502	Exiting controller run; ID: 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.467+0300	INFO	consensus/consensus.go:169	Exiting consensus run; ID: 1	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 1}
+2026-09-10T07:27:23.467+0300	INFO	bft/controller.go:502	Exiting controller run; ID: 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+2026-09-10T07:27:23.467+0300	INFO	consensus/consensus.go:169	Exiting consensus run; ID: 2	{"t": "TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery", "id": 2}
+--- PASS: TestFourNodePrepareTimeoutTriggersViewChangeAndRecovery (1.70s)
+PASS
+ok  	github.com/hyperledger-labs/SmartBFT/test	3.198s
