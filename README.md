@@ -13,6 +13,8 @@ This fork includes a standalone browser demo with four Python regional cores pai
 
 See the [MWVN demo user guide](deploy/local/README.md) for prerequisites, installation, running, testing, and limitations.
 
+The portable Python-to-Go interface is documented in the [MWVN SmartBFT API contract](docs/mwvn-smartbft-api.md).
+
 
 ## License
 
