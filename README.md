@@ -11,9 +11,7 @@ For more information on this library see our [wiki page](https://github.com/hype
 
 This fork contains the Go `mwvn_bftnode` adapter and configurable PREPARE vote-collection timeout. Python validation and deployment are maintained in separate repositories.
 
-See [installation](docs/INSTALLATION.md), [design](docs/DESIGN.md), and the [HTTP API](docs/mwvn-smartbft-api.md).
-
-The portable Python-to-Go interface is documented in the [MWVN SmartBFT API contract](docs/mwvn-smartbft-api.md).
+See the consolidated [MWVN design and HTTP API](docs/DESIGN.md).
 
 
 ## License

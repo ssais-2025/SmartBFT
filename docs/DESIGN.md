@@ -81,12 +81,8 @@ SmartBFT/
 │       ├── server.go                 public and peer HTTP routes
 │       ├── config_test.go            membership/configuration tests
 │       └── Dockerfile                engine container image
-├── docs/                              NEW: standalone-engine documentation
-│   ├── DESIGN.md                     this document
-│   ├── INSTALLATION.md               build and test instructions
-│   ├── mwvn-smartbft-api.md          complete HTTP contract
-│   ├── prepare-vote-collection-timeout.md
-│   └── verification/prepare-timeout/ test report and captured logs
+├── docs/
+│   └── DESIGN.md                     NEW: consolidated design and API document
 ├── internal/bft/
 │   ├── view.go                       CHANGED: PREPARE deadline behavior
 │   ├── util.go                       CHANGED: pass deadline into a view
@@ -234,14 +230,15 @@ mwvn_bftnode \
 
 Tests use short deadlines so failure/recovery scenarios finish quickly. The
 normal four-node test retains the real `5m` configuration and proves consensus
-completes as soon as quorum is available rather than waiting five minutes. See
-`prepare-vote-collection-timeout.md` and
-`verification/prepare-timeout/REPORT.md` for the detailed evidence.
+completes as soon as quorum is available rather than waiting five minutes. The
+relevant tests are `internal/bft/prepare_timeout_test.go`,
+`test/prepare_timeout_test.go`, and `pkg/types/config_test.go`.
 
 ## 6. HTTP API summary
 
-The complete schemas, examples, limits, errors, and security notes are in
-[`mwvn-smartbft-api.md`](mwvn-smartbft-api.md).
+This section consolidates the engine's HTTP surface in the design document.
+Implementation routes are defined in `cmd/mwvn_bftnode/server.go`; callbacks are
+defined in `cmd/mwvn_bftnode/callback.go`.
 
 ### 6.1 Python validator to Go engine
 
