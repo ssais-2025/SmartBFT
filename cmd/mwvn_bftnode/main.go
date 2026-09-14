@@ -23,7 +23,7 @@ func main() {
 	listenAddress := flag.String("listen", ":8200", "local and peer HTTP listen address")
 	membershipPath := flag.String("membership", "", "shared membership JSON file")
 	privateKeyPath := flag.String("private-key", "", "base64 Ed25519 seed file for this node")
-	coreURL := flag.String("core-url", "", "paired Python regional-core URL")
+	coreURL := flag.String("core-url", "", "paired Python validator callback URL")
 	dataDirectory := flag.String("data-dir", "/data", "SmartBFT WAL directory")
 	prepareTimeout := flag.Duration("prepare-timeout", 5*time.Minute, "maximum PREPARE vote collection time")
 	flag.Parse()

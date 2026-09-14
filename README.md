@@ -9,7 +9,9 @@ For more information on this library see our [wiki page](https://github.com/hype
 
 ## MWVN regional-consensus demo
 
-This fork includes a standalone browser demo with four Python regional cores paired with four independent SmartBFT engine processes, a synthetic approved-QC form, consensus-message tracing, and per-validator ledger inspection.
+This fork includes a standalone browser demo with four Python dummy validators paired with four independent SmartBFT engine processes, a synthetic approved-QC form, consensus-message tracing, and per-validator ledger inspection.
+
+> **Test-only boundary:** `dummy_validator/` is protocol test scaffolding. It is not the MWVN Regional Validator implementation. The independent implementation lives in the separate `ssais-2025/mwvn-validator` repository.
 
 See the [MWVN demo user guide](deploy/local/README.md) for prerequisites, installation, running, testing, and limitations.
 

@@ -3,7 +3,7 @@ COMPOSE := COMPOSE_PARALLEL_LIMIT=1 docker compose -f deploy/local/compose.yaml
 .PHONY: demo-build demo-up demo-status demo-logs demo-test demo-test-faults demo-down test-unit
 
 demo-build:
-	docker build --file deploy/local/Dockerfile.core --tag mwvn-regional-core:local .
+	docker build --file deploy/local/Dockerfile.dummy-validator --tag mwvn-dummy-validator:local .
 	docker build --file deploy/local/Dockerfile.bftnode --tag mwvn-smartbft-engine:local .
 
 demo-up: demo-build
@@ -18,13 +18,13 @@ demo-logs:
 	$(COMPOSE) logs --follow
 
 demo-test:
-	$(COMPOSE) exec -T regional-core-1 python -m regional_core.tests.compose_smoke
+	$(COMPOSE) exec -T dummy-validator-1 python -m dummy_validator.tests.compose_smoke
 
 demo-test-faults:
 	$(COMPOSE) stop bft-node-4
-	$(COMPOSE) exec -T regional-core-1 python -m regional_core.tests.compose_faults one-down
+	$(COMPOSE) exec -T dummy-validator-1 python -m dummy_validator.tests.compose_faults one-down
 	$(COMPOSE) stop bft-node-3
-	$(COMPOSE) exec -T regional-core-1 python -m regional_core.tests.compose_faults no-quorum
+	$(COMPOSE) exec -T dummy-validator-1 python -m dummy_validator.tests.compose_faults no-quorum
 	@echo "Fault tests passed. Run 'make demo-up' to restore a fresh four-engine demo."
 
 demo-down:
@@ -32,4 +32,4 @@ demo-down:
 
 test-unit:
 	go test -mod=vendor -count=1 ./cmd/mwvn_bftnode
-	PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v regional_core.tests.test_app
+	PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v dummy_validator.tests.test_app
