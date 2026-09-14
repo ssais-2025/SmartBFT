@@ -7,13 +7,11 @@ It is an open source library written in Go.
 The implementation is inspired by the [BFT-SMaRt project](https://github.com/bft-smart/library). 
 For more information on this library see our [wiki page](https://github.com/hyperledger-labs/SmartBFT/wiki).
 
-## MWVN regional-consensus demo
+## MWVN consensus engine
 
-This fork includes a standalone browser demo with four Python dummy validators paired with four independent SmartBFT engine processes, a synthetic approved-QC form, consensus-message tracing, and per-validator ledger inspection.
+This fork contains the Go `mwvn_bftnode` adapter and configurable PREPARE vote-collection timeout. Python validation and deployment are maintained in separate repositories.
 
-> **Test-only boundary:** `dummy_validator/` is protocol test scaffolding. It is not the MWVN Regional Validator implementation. The independent implementation lives in the separate `ssais-2025/mwvn-validator` repository.
-
-See the [MWVN demo user guide](deploy/local/README.md) for prerequisites, installation, running, testing, and limitations.
+See [installation](docs/INSTALLATION.md), [design](docs/DESIGN.md), and the [HTTP API](docs/mwvn-smartbft-api.md).
 
 The portable Python-to-Go interface is documented in the [MWVN SmartBFT API contract](docs/mwvn-smartbft-api.md).
 
