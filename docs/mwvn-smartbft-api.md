@@ -485,6 +485,7 @@ The new MWVN Regional Validator repository should:
 - SmartBFT adapter and commit schema: `cmd/mwvn_bftnode/node.go`
 - Membership and canonical encoding: `cmd/mwvn_bftnode/config.go`
 - Authenticated peer transport: `cmd/mwvn_bftnode/transport.go`
-- Local deployment: `deploy/local/compose.yaml`
+- Four-node deployment and end-to-end tests:
+  `/Users/shlomy/projects/mwvn-regional-deployment`
 
 This contract documents the current local implementation. It is not a claim of production readiness or full MWVN validation.
