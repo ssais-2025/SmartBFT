@@ -20,18 +20,51 @@ MWVN validator and does not know the witness-event or local-QC policy.
 
 ```mermaid
 flowchart LR
-    A[Local QC Aggregator] -->|Local QC over IP| V1[Python Regional Validator 1]
-    V1 -->|Validated request<br/>POST /v1/requests| B1[Go SmartBFT Engine 1]
-    B1 <-->|Authenticated SmartBFT peer API| B2[Engine 2]
-    B1 <-->|Authenticated SmartBFT peer API| B3[Engine 3]
-    B1 <-->|Authenticated SmartBFT peer API| B4[Engine 4]
+    A[Local QC Aggregator] -->|Submit local QC over IP<br/>to any validator; V1 shown| V1
+
+    subgraph Validators[Python MWVN Regional Validators]
+        V1[Validator 1]
+        V2[Validator 2]
+        V3[Validator 3]
+        V4[Validator 4]
+    end
+
+    subgraph Engines[Go SmartBFT Engine Processes]
+        B1[Engine 1]
+        B2[Engine 2]
+        B3[Engine 3]
+        B4[Engine 4]
+    end
+
+    V1 -->|Admitted request<br/>POST /v1/requests| B1
+    V2 -->|Admitted request<br/>POST /v1/requests| B2
+    V3 -->|Admitted request<br/>POST /v1/requests| B3
+    V4 -->|Admitted request<br/>POST /v1/requests| B4
+
     B1 -->|Verify and commit callbacks| V1
-    V1 --> L1[(Application ledger 1)]
+    B2 -->|Verify and commit callbacks| V2
+    B3 -->|Verify and commit callbacks| V3
+    B4 -->|Verify and commit callbacks| V4
+
+    B1 <-->|Signed SmartBFT messages| B2
+    B1 <-->|Signed SmartBFT messages| B3
+    B1 <-->|Signed SmartBFT messages| B4
+    B2 <-->|Signed SmartBFT messages| B3
+    B2 <-->|Signed SmartBFT messages| B4
+    B3 <-->|Signed SmartBFT messages| B4
+
+    V1 --> L1[(Ledger 1)]
+    V2 --> L2[(Ledger 2)]
+    V3 --> L3[(Ledger 3)]
+    V4 --> L4[(Ledger 4)]
 ```
 
 Each Regional Validator knows only its paired engine URL. Each Go engine knows
 all Go peers from the shared membership file and knows only its paired Python
-validator callback URL.
+validator callback URL. The diagram uses Validator 1 as the example ingress.
+After SmartBFT distributes a proposal, every engine asks its own paired validator
+to verify the proposal; after the decision, every engine delivers the same
+consensus-decided record to its paired validator's independent ledger.
 
 ## 2. Upstream SmartBFT v1.0.1 structure
 
