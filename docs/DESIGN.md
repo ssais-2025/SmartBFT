@@ -82,7 +82,8 @@ SmartBFT/
 │       ├── config_test.go            membership/configuration tests
 │       └── Dockerfile                engine container image
 ├── docs/
-│   └── DESIGN.md                     NEW: consolidated design and API document
+│   ├── DESIGN.md                     NEW: consolidated design and API document
+│   └── INSTALLATION.md               NEW: standalone build and test instructions
 ├── internal/bft/
 │   ├── view.go                       CHANGED: PREPARE deadline behavior
 │   ├── util.go                       CHANGED: pass deadline into a view
